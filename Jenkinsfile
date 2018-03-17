@@ -19,7 +19,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing...'
-                sh 'systemctl enable tomcat; systemctl start tomcat'
+                sh '/usr/libexec/tomcat/server start'
             }
         }
     }
